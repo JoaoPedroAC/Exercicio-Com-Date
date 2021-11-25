@@ -14,7 +14,7 @@ createDiv(`${convertDay()}, ${buildDate()} ás`);
 //  vai apresentar o nome do dia
 function convertDay() {
 	const date = new Date();
-	let atualDate = date.getDay();
+	let atualDate = date.getDay(); 
 	const days = [
 		'Domingo',
 		'Segunda-feira',
@@ -25,6 +25,9 @@ function convertDay() {
 		'Sábado'
 	];
 	return days[atualDate];
+}
+function createP(){
+  
 }
 function convertMonth(){
 	const date = new Date();
