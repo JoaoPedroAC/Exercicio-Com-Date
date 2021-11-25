@@ -2,6 +2,7 @@
 :root{
 	--back-Color:hsl(219, 71%, 47%);
 	--div-block-color: hsl(0, 0%, 80%);
+  --paragraph-color: black;
 }
 * {
 	padding: 0;
@@ -37,4 +38,5 @@ html,body{
 }
 p{
 	font-weight: 400;
+  color: var(--paragraph-color);
 }
