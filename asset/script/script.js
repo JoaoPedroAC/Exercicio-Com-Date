@@ -1,10 +1,12 @@
 /* dia da semana, a data dd/mm/aaaa ás 00:00 -> objetivo*/
-// Essa função cria uma div filha e tag p, onde será escrito tudo oq precisamos
+
+// essa function executa no html oq eu precisar
 function printInDoc(p, obj){
   p.innerHTML= obj;
 }
-printInDoc(createP(createDiv()),`${convertDay()}, ${buildDate()} ás`);
+printInDoc(createP(),`${convertDay()}, ${buildDate()} ás`);
 
+// Essa função cria uma div filha;
 function createDiv() {
 	const momDiv = document.getElementById('main');
 	const childDiv = document.createElement('div');
@@ -13,13 +15,15 @@ function createDiv() {
 	return childDiv;
 }
 
-function createP(div){
+// Essa função cria uma tag P que está inserida na DIV filha;
+function createP(){
+  const div = createDiv();
   const p = document.createElement('p');
 	div.appendChild(p);
 	return p;
 }
 
-//  vai apresentar o nome do dia
+//  vai apresentar o nome dos dias;
 function convertDay() {
 	const date = new Date();
 	let atualDate = date.getDay(); 
