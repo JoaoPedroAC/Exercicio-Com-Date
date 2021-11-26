@@ -2,7 +2,6 @@
 // essa function executa no html oq eu precisar e atualiza
 function printInDoc() {
 	setInterval(function () {
-		watch();
 		const p = document.querySelector('.relogio');
 		// const p = document.getElementsByTagName('p')[0];
 		p.innerHTML = `${convertDay()}, ${buildDate()} ás ${watch()}`;
