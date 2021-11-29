@@ -82,3 +82,11 @@ function watch() {
 	let timer = `${hours} : ${minutes} : ${seconds}`;
 	return timer;
 }
+
+// forma curta para os meses e dias e tempo, eu teria que reformular algumas coisas por isso não utilizei, devido a ter encerrado essa etapa do projeto.
+/*
+essa função encurtaria o meu código
+const data = new Date();
+*.innHTML = data.toLocaleDateString('pt-BR', {dateStyle: 'full', timeStyle: 'short'});
+isso iria printar na document tudo isso que eu fiz praticamente
+*/
